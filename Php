@@ -1,0 +1,16 @@
+<?php
+$kalol_info = [
+    "name" => "Kalol",
+    "district" => "Gandhinagar",
+    "pincode" => 382721,
+    "notable_industries" => ["Fertilizers (IFFCO)", "Textiles", "Petroleum"],
+    "coordinates" => "23.23°N 72.48°E"
+];
+
+echo "<h2>Industrial Profile: " . $kalol_info['name'] . "</h2>";
+echo "<ul>";
+echo "<li><strong>District:</strong> " . $kalol_info['district'] . "</li>";
+echo "<li><strong>Key Sectors:</strong> " . implode(", ", $kalol_info['notable_industries']) . "</li>";
+echo "<li><strong>Location:</strong> " . $kalol_info['coordinates'] . "</li>";
+echo "</ul>";
+?>
