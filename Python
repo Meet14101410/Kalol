@@ -1,0 +1,16 @@
+def kalol_stats():
+    data = {
+        "Name": "Kalol",
+        "District": "Gandhinagar",
+        "State": "Gujarat",
+        "Pincode": 382721,
+        "Significance": "Major Industrial and Fertilizer Hub",
+        "Railway_Code": "KLL"
+    }
+
+    print(f"--- Fact Sheet: {data['Name']} ---")
+    for key, value in data.items():
+        print(f"{key:15}: {value}")
+
+if __name__ == "__main__":
+    kalol_stats()
