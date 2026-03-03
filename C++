@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+struct AdministrativeProfile {
+    std::string name = "Kalol";
+    std::string district = "Gandhinagar";
+    std::string status = "Nagarpalika / Taluka HQ";
+    std::string primary_industry = "IFFCO (Fertilizers)";
+    int pincode = 382721;
+};
+
+int main() {
+    AdministrativeProfile kalol;
+    
+    std::cout << "--- Kalol Administrative Data ---\n";
+    std::cout << "Entity:   " << kalol.name << "\n";
+    std::cout << "District: " << kalol.district << "\n";
+    std::cout << "Industry: " << kalol.primary_industry << "\n";
+    std::cout << "PIN Code: " << kalol.pincode << std::endl;
+    
+    return 0;
+}
